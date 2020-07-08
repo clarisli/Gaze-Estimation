@@ -4,7 +4,7 @@ The goal of this project is to use a gaze detection model to control the mouse p
 
 The application draws the gaze lines like the laser beams. Just for fun. :-)
 
-![demo](images\demo.gif)
+![demo](images/demo.gif)
 
 ## How it Works
 
@@ -26,7 +26,7 @@ So, the application uses three other OpenVINO models to get these inputs:
 
 The following shows the flow of data from the input, through the different models, to the mouse controller:
 
-![](images\pipeline.png)
+![](images/pipeline.png)
 
 * Face detection model finds the locations of faces in an image.
 * Landmark detection model finds the key landmarks from the face in the image. The landmarks includes the locations of the left and right eyes.
@@ -179,19 +179,19 @@ The test results are:
 
 #### Inference time
 
-![inference_time](images\inference_time.png)
+![inference_time](images/inference_time.png)
 
 #### Input/output preprocess time
 
-![io_preprocess_time](images\io_preprocess_time.png)
+![io_preprocess_time](images/io_preprocess_time.png)
 
 #### FPS
 
-![fps](images\fps.png)
+![fps](images/fps.png)
 
 #### Model loading time
 
-![model_loading_time](images\model_loading_time.png)
+![model_loading_time](images/model_loading_time.png)
 
 ## Results
 Models with higher precision usually take longer to run inference. The FP16-INT8 models follow this convention, they have a shorter inference time than FP16 models. 
